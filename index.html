@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>musix</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="close">
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-heart"></i> My Favourites</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-music"></i> My music(6)</a>
+          </li>
+
+          <li>
+            <a href="#"><i class="fa-solid fa-briefcase"></i> My Portfolio</a>
+          </li>
+        </ul>
+
+        <div class="opt-menu">
+          <select name="" id="">
+            <option value="">Light mode</option>
+
+            <option value="">Dark mode</option>
+          </select>
+        </div>
+
+        <div class="see-me">
+          <p>@JamesLarbie30@gmail.com | +233 0202580359</p>
+        </div>
+      </div>
+      <div class="music-view">
+        <div class="music-view-intro">
+          <i class="fa-solid fa-bars"></i>
+          <div class="intro">
+            <h1 class="artist">Black Sherif</h1>
+            <h2 class="songName">Kweku the traveller</h2>
+          </div>
+
+          <div class="music-controls">
+            <div class="progress-view">
+              <div class="progressbar">
+                <div class="p-length"></div>
+                <div class="p-status"></div>
+              </div>
+              <div class="timer">
+                <p class="music-start">00:00</p>
+                <p class="music-end">00:00</p>
+              </div>
+            </div>
+
+            <div class="controls">
+              <i class="fa-solid fa-angle-left"></i>
+
+              <div class="play-pause">
+                <i class="fa-solid fa-pause"></i>
+                <i class="fa-solid fa-play"></i>
+              </div>
+
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- angle up -->
+      <div class="paradox">
+        <i class="fa-solid fa-angles-up"></i>
+      </div>
+
+      <!-- music list options -->
+      <div class="music-list">
+        <div class="options">
+          <i class="fa-solid fa-filter"></i>
+
+          <div class="search">
+            <input type="text" placeholder="search musix" />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+        <!-- all the songs are shown visually here -->
+        <div class="m-list"></div>
+      </div>
+
+      <!-- modal -->
+      <dialog id="modal"></dialog>
+
+      <div class="settings">
+        <i class="fa-solid fa-gear"></i>
+      </div>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
