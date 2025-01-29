@@ -3,25 +3,25 @@ export let music = [
         name: "Kwaku the traveller",
         artist: "Black Sherif",
         song: "./music/m1.mp3",
-        images: "images/trav.jpg"
+        images: "../images/trav.jpg"
     },
     {
         name: "Mood",
         artist: "Mr Drew",
         song: "./music/m2.mp3",
-        images: "images/mood.jpg"
+        images: "../images/mood.jpg"
     },
     {
         name: "Rising Youth",
         artist: "Shatta Wale",
         song: "./music/m3.mp3",
-        images: "images/rising.jpg"
+        images: "../images/rising.jpg"
     },
     {
         name: "Koliko",
         artist: "VVIP ft Miyaki",
         song: "./music/m4.mp3",
-        images: "images/koliko.jpg"
+        images: "../images/koliko.jpg"
     },
     {
         name: "Redemption song",
