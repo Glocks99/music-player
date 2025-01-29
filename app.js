@@ -187,30 +187,30 @@ window.addEventListener("DOMContentLoaded", e => {
        modal.showModal()
    })
 
-   modal.addEventListener("click", e => {
-        if(e.target.textContent.toLowerCase().includes("ascending")){
-            let asc = music.sort((a, b) => a.name.localeCompare(b.name))
-            music = asc
-            disMusicList()
-        }
-        if(e.target.textContent.toLowerCase().includes("descending")){
-            let desc = music.sort((a, b) => b.name.localeCompare(a.name))
-            music = desc
-            disMusicList()
-        }
-        if(e.target.textContent.toLowerCase().includes("unorganized")){
-            function shuffleArray(array) {
-                for (let i = array.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1)); // Get a random index
-                    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
-                }
-                return array;
-            }
-            let unord = shuffleArray(music)
-            music = unord
-            disMusicList()
-        }
-   })
+//    modal.addEventListener("click", e => {
+//         if(e.target.textContent.toLowerCase().includes("ascending")){
+//             let asc = music.sort((a, b) => a.name.localeCompare(b.name))
+//             music = asc
+//             disMusicList()
+//         }
+//         if(e.target.textContent.toLowerCase().includes("descending")){
+//             let desc = music.sort((a, b) => b.name.localeCompare(a.name))
+//             music = desc
+//             disMusicList()
+//         }
+//         if(e.target.textContent.toLowerCase().includes("unorganized")){
+//             function shuffleArray(array) {
+//                 for (let i = array.length - 1; i > 0; i--) {
+//                     const j = Math.floor(Math.random() * (i + 1)); // Get a random index
+//                     [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+//                 }
+//                 return array;
+//             }
+//             let unord = shuffleArray(music)
+//             music = unord
+//             disMusicList()
+//         }
+//    })
 
 
 })
